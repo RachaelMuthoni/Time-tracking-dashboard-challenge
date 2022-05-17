@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+}
+.content{
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(4,3fr);
+    grid-template-rows: repeat(2,200px);
+    grid-template-areas: 
+    "one two three four"
+    "one five six seven";
+}
+svg{
+    float: right;
+    overflow: hidden;
+}
+#Jeremy{
+    padding-top: 30px;
+    color:cadetblue;
+}
+.area1{
+    grid-area: one;
+    width:100%;
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+.profile{
+    padding: 20px;
+    height: 280px;
+    border-radius: 20px;
+    background-color:hsl(236, 85%, 61%);
+    
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.duration{
+    margin: 15px;
+    
+}
+.area2{
+    grid-area: two;
+    border-radius: 20px;
+    background-color: hsl(15, 100%, 70%);
+    
+}
+.task{
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    margin-top: 50px;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    
+}
+.one{
+    padding-bottom: 20px;
+    position: relative;
+}
+.area3{
+    grid-area: three;
+    border-radius: 20px;
+    background-color: hsl(195, 74%, 62%);
+}
+.area4{
+    grid-area: four;
+    border-radius: 20px;
+    background-color: hsl(348, 100%, 68%);
+   
+}
+.area5{
+    grid-area: five;
+    border-radius: 20px;
+    background-color: hsl(145, 58%, 55%);
+}
+.area6{
+    grid-area: six;
+    border-radius: 20px;
+    background-color:hsl(264, 64%, 52%);
+}
+.area7{
+    grid-area: seven;
+    border-radius: 20px;
+    background-color: hsl(43, 84%, 65%);  
+}
