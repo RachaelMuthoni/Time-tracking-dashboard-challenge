@@ -101,3 +101,51 @@ svg{
     border-radius: 20px;
     background-color: hsl(43, 84%, 65%);  
 }
+@media screen and (max-width:350px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+    }
+    .container{
+        width: 100vw;
+        height: 380vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+       
+        background-color: hsl(226, 43%, 10%);
+    }
+    
+    .content{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        
+        grid-template-columns: repeat(1,2fr);
+        grid-template-rows: repeat(7,200px);
+        grid-template-areas: 
+        "one"
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven";
+    }
+    .profile{
+        padding: 20px;
+        height: auto;
+        width: auto;
+        display: flex;
+        border-radius: 20px;
+        background-color:hsl(236, 85%, 61%);
+        
+    }
+    
+    
+   
+}
